@@ -1,14 +1,14 @@
 .InvoiceContainer {
-  height: calc(100vh - 60px - 5rem);
+  height: calc(100vh - 60px - 4rem);
   background-color: #f2f3f5;
   width: calc(100vw - 260px);
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 2rem;
+  padding: 2rem;
 
   & .Title {
     text-transform: uppercase;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     font-size: 0.8rem;
     color: var(--grey);
     font-weight: 600;
