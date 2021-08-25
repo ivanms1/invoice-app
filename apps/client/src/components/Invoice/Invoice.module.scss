@@ -1,2 +1,86 @@
 .InvoiceContainer {
+  height: calc(100vh - 60px - 5rem);
+  background-color: #f2f3f5;
+  width: calc(100vw - 260px);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 2rem;
+
+  & .Title {
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    font-size: 0.8rem;
+    color: var(--grey);
+    font-weight: 600;
+  }
+  & .Invoice {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    height: 100%;
+    width: calc(100% - 5rem);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+
+    & .Header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      & .Left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem 0;
+
+        & .HeaderTitle {
+          letter-spacing: 0.03rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 1.1rem;
+        }
+
+        & .InvoiceTime {
+          font-size: 0.8rem;
+          font-weight: 500;
+          color: var(--grey);
+        }
+      }
+
+      & .Right {
+        display: flex;
+        gap: 0 2.5rem;
+
+        & .CustomerDetails {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 0.5rem 0;
+
+          & .CustomerTitle {
+            text-transform: uppercase;
+            color: var(--grey);
+            font-size: 0.8rem;
+          }
+
+          & .Email {
+            color: var(--grey);
+            font-size: 0.9rem;
+            font-weight: 500;
+          }
+        }
+
+        & .PrintButton {
+          background-color: transparent;
+          border: solid 1px #65a4fa;
+          border-radius: 5px;
+          height: 50px;
+          padding: 1rem;
+          color: #65a4fa;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
