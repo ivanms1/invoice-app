@@ -1,10 +1,10 @@
 .InvoiceContainer {
-  height: calc(100vh - 60px - 4rem);
+  height: calc(100vh - 60px - 6rem);
   background-color: #f2f3f5;
   width: calc(100vw - 260px);
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 3rem 5rem;
 
   & .Title {
     text-transform: uppercase;
@@ -17,6 +17,7 @@
     background-color: #fff;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: calc(100% - 5rem);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -25,8 +26,8 @@
 
     & .Header {
       display: flex;
-      width: 100%;
       justify-content: space-between;
+      margin-bottom: 2rem;
 
       & .Left {
         display: flex;
@@ -74,11 +75,18 @@
           background-color: transparent;
           border: solid 1px #65a4fa;
           border-radius: 5px;
-          height: 50px;
-          padding: 1rem;
+          height: 45px;
+          padding: 0 1rem;
           color: #65a4fa;
           text-transform: uppercase;
+          display: flex;
+          align-items: center;
           cursor: pointer;
+
+          & .Printer {
+            height: 20px;
+            margin-left: 0.5rem;
+          }
         }
       }
     }

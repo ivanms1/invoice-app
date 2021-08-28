@@ -1,0 +1,31 @@
+.TotalSection {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+
+  & .TotalBox {
+    display: flex;
+    width: 328px;
+    justify-content: space-between;
+
+    & .TotalTitle {
+      color: var(--grey);
+      font-size: 0.9rem;
+    }
+
+    & .GrandTitle {
+      font-size: 0.9rem;
+    }
+
+    & .Result,
+    .GrandTotal {
+      font-size: 0.9rem;
+    }
+
+    & .GrandTotal {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.Table {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+  gap: 3rem;
+
+  & .Header,
+  & .NameHeader {
+    font-size: 0.9rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  & .QuantityHeader,
+  .PriceHeader {
+    justify-self: end;
+  }
+
+  & .QuantityHeader {
+    width: 70px;
+    text-align: center;
+  }
+
+  & .TableContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem 0;
+
+    & .ItemQuantity,
+    .ItemPrice {
+      justify-self: end;
+      text-align: center;
+    }
+    .ItemQuantity {
+      width: 70px;
+    }
+  }
+}
