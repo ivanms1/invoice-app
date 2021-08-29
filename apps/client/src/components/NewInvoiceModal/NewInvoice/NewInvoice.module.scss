@@ -1,0 +1,26 @@
+.NewInvoice {
+  display: flex;
+  flex-direction: column;
+
+  & .Title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  & .ItemsTable {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    & .NameHeader,
+    .QuantityHeader,
+    .PriceHeader {
+      padding: 0.8rem 0;
+      color: var(--grey);
+      border-top: solid 1px var(--grey);
+      border-bottom: solid 1px var(--grey);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+  }
+}

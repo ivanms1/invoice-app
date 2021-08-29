@@ -1,14 +1,18 @@
 import React, { Fragment } from 'react';
 import { useFieldArray, useForm } from 'react-hook-form';
 
+import NewItem from './NewItem';
+
 import styles from './NewInvoice.module.scss';
 
+export type Item = {
+  name: string;
+  price: string;
+  quantity: string;
+};
+
 type FormValues = {
-  items: {
-    name: string;
-    price: number;
-    quantity: number;
-  }[];
+  items: Item[];
 };
 
 function NewInvoice() {
@@ -36,10 +40,13 @@ function NewInvoice() {
           <Fragment key={item.id}>
             <span>{item.name}</span>
             <span>{item.quantity}</span>
-            <span>{item.price}</span>
+            <span>
+              {item.price} <button onClick={() => remove(index)}>remove</button>
+            </span>
           </Fragment>
         ))}
       </div>
+      <NewItem onAdd={(item) => append(item)} />
     </form>
   );
 }

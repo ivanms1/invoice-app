@@ -52,11 +52,11 @@
   font-size: 16px;
   min-height: 200px;
   padding: 2rem;
-  width: 500px;
 
   & .Header {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
     & .Title {
       font-weight: 600;
       margin-right: 2rem;
