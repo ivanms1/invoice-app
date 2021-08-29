@@ -1,4 +1,17 @@
 .Layout {
+  & .NewInvoiceButton {
+    background-color: #ff64a4;
+    border: none;
+    position: absolute;
+    top: 35px;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  }
   & .Container {
     display: flex;
   }

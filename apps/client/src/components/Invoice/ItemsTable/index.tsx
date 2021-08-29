@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import styles from './ItemsTable.module.scss';
 
 interface ItemsTable {
@@ -16,7 +18,7 @@ function ItemsTable({ items }: ItemsTable) {
         <span className={styles.QuantityHeader}>Quantity</span>
         <span className={styles.PriceHeader}>Price</span>
         {items.map((item) => (
-          <>
+          <Fragment key={item.name}>
             <div className={styles.ItemName}>
               <span>{item.name}</span>
             </div>
@@ -26,7 +28,7 @@ function ItemsTable({ items }: ItemsTable) {
             <div className={styles.ItemPrice}>
               <span>{item.price}</span>
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </div>
