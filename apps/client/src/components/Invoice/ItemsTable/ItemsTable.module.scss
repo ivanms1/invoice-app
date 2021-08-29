@@ -5,8 +5,9 @@
   margin-bottom: 4rem;
   gap: 3rem;
 
-  & .Header,
-  & .NameHeader {
+  & .QuantityHeader,
+  .NameHeader,
+  .PriceHeader {
     font-size: 0.9rem;
     color: var(--grey);
     text-transform: uppercase;

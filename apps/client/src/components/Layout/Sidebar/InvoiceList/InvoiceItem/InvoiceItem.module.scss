@@ -1,0 +1,46 @@
+.InvoiceItem {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  cursor: pointer;
+
+  &.isSelected {
+    background-color: var(--sidebar-active-bg);
+
+    & .Left {
+      & :not(:last-child) {
+        color: #fff;
+      }
+    }
+
+    & .Right {
+      & .Total {
+        color: #fff;
+      }
+    }
+  }
+
+  & .Left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & .Customer {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--blue);
+    }
+  }
+
+  & .Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .Total {
+      text-align: end;
+      font-weight: 600;
+    }
+  }
+}

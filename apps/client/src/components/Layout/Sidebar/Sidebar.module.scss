@@ -1,5 +1,33 @@
 .Sidebar {
-  background-color: #2f3740;
+  background-color: var(--sidebar-bg);
   height: calc(100vh - 60px);
   width: 360px;
+
+  color: var(--grey);
+  overflow: hidden;
+
+  & .InputContainer {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #353e47;
+    border-radius: 150px;
+    width: calc(100% - 4rem);
+    margin: 1rem;
+
+    & .SearchIcon {
+      margin-right: 0.5rem;
+    }
+
+    & .SearchInput {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+
+      &:focus {
+        color: #fff;
+        outline: none;
+      }
+    }
+  }
 }
