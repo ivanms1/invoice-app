@@ -30,18 +30,21 @@ function NewItem({ onAdd }: NewItem) {
     <div className={styles.NewItem}>
       <input
         value={newItem.name}
+        placeholder="Please enter a name"
         className={styles.NameInput}
         onChange={(e) => setNewItem({ ...newItem, name: e?.target?.value })}
         type="text"
       />
       <input
         value={newItem.quantity}
+        placeholder="0.00"
         className={styles.Input}
         onChange={(e) => setNewItem({ ...newItem, quantity: e?.target?.value })}
         type="number"
       />
       <input
         value={newItem.price}
+        placeholder="0.00"
         className={styles.Input}
         onChange={(e) => setNewItem({ ...newItem, price: e?.target?.value })}
         type="number"
